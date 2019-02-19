@@ -1,3 +1,141 @@
+```/* ---- reset ---- */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* ---- typography ---- */
+
 body {
-    background: bisque
+  color: #111;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 147%;
+}
+
+h1 {}
+
+h2 {}
+
+h3 {}
+
+a{
+    color: orange;
+    text-decoration: none
+ }
+
+    a:hover{
+        color: orchid
+    }
+
+/* ---- layout / common styles ---- */
+
+body { 
+    background:whitesmoke
+}
+
+.page-header{
+    background: #000; 
+    color: floralwhite;
+    padding: 10px
+}
+.page-header a{
+    color: aqua
+}
+.page-header a:hover{
+    color: teal
+}
+
+.main-footer {
+  color: white;
+  padding: 60px 0;
+  background: #111;
+}
+
+.container {
+  margin: 0 20px;
+  max-width: 960px;
+  border: 1px solid black
+}
+
+section {
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+img:hover{
+    opacity: .7 ;
+    -moz-box-shadow:    3px 3px 10px 0px #000;
+    -webkit-box-shadow: 3px 3px 10px 0px #000;
+    box-shadow:         3px 3px 10px 0px #000;
+  }
+
+.inline-list li{ 
+    display: inline-block; 
+}
+
+.portfolio-list li{
+    width: 30%
+}
+
+section:nth-last-of-type(even){
+    background: lightblue
+}
+/* ---- components ---- */
+
+/* --- HEADER --- */
+.page-header{
+    font-size: 1em; 
+}
+
+/* ---- section ---- */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .page-header{
+        background: #ffffff; 
+        color: goldenrod
+    }
+    .page-header a{
+        color: orangered
+    }
+    .page-header a:hover{
+        color: yellow
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .page-header{
+        background: slategray; 
+        color: skyblue
+    }
+    .page-header a{
+        color: gainsboro
+    }
+    .page-header a:hover{
+        color: burlywood
+    }
+    .container{
+        margin: 0 auto
+    }
+    .page-header{
+        font-size: 1.5em
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
+
 }
