@@ -1,4 +1,3 @@
-```/* ---- reset ---- */
 
 html {
   box-sizing: border-box;
@@ -10,43 +9,40 @@ html {
 /* ---- typography ---- */
 
 body {
-  color: #111;
-  font-family: Helvetica, Arial, sans-serif;
+  color: blueviolet;
+  font-family: 'PT Sans Narrow', sans-serif;
   font-size: 16px;
   line-height: 147%;
 }
-
-h1 {}
-
-h2 {}
-
-h3 {}
 
 a{
     color: orange;
     text-decoration: none
  }
 
-    a:hover{
-        color: orchid
-    }
+a:hover{
+    color: orchid
+}
 
+h3{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 32px;
+    line-height: 2em;
+    text-align: center;
+    margin: 10px;
+}
+
+h4{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 24px;
+    line-height: 2em;
+    text-align: center;
+    margin: 10px;
+}
 /* ---- layout / common styles ---- */
 
 body { 
     background:whitesmoke
-}
-
-.page-header{
-    background: #000; 
-    color: floralwhite;
-    padding: 10px
-}
-.page-header a{
-    color: aqua
-}
-.page-header a:hover{
-    color: teal
 }
 
 .main-footer {
@@ -74,7 +70,7 @@ img:hover{
   }
 
 .inline-list li{ 
-    display: inline-block; 
+    display: inline-block;   
 }
 
 .portfolio-list li{
@@ -86,9 +82,61 @@ section:nth-last-of-type(even){
 }
 /* ---- components ---- */
 
+/*--- portfolio-list---*/
+
+.flex-list{
+    display: flex
+}
+.flex-list li{
+    flex-basis: 100%;
+    flex-wrap: wrap;
+}
 /* --- HEADER --- */
+
+.page-header a{
+    color: aqua;
+    padding: 5px 10px;
+    font-weight: 800;
+}
+
+.page-header a:hover{
+    color: teal
+}
+
 .page-header{
+    background: #000; 
+    color: floralwhite;
+    display: flex;
+    justify-content: space-between;
     font-size: 1em; 
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+/* ---- banner ---*/
+.banner{
+    height: 50vh;
+    color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(../images/senior-designer.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+.banner h1{
+    font-family: 'Lilita One', cursive;
+    font-size: 3em;
+    line-height: 2em;
 }
 
 /* ---- section ---- */
@@ -130,12 +178,15 @@ section:nth-last-of-type(even){
     .page-header{
         font-size: 1.5em
     }
+    .flex-list li{
+        flex-basis: 50%
+    }
 }
+
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 
-}
 
 
 }
