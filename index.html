@@ -2,12 +2,13 @@
 <html lang="en">
 
 <head>
-    <title>Andrea Portfolio</title>
+    <title>Andrea 1st Web - Do not judge!</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Laila:300,400,500,600,700|Lilita+One|PT+Sans+Narrow:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -15,7 +16,7 @@
 <body id="top">
     <!-- this is the header -->
     <header class="page-header">
-        <h1>Andrea Garrido</h1>
+        <h1>Andrea 1st Web - Do not judge!</h1>
         <nav class="main-nav">
             <ul class="inline-list">
                 <li><a href="#">About</a></li>
@@ -47,33 +48,37 @@
                     suscipit, nisi non ipsum aliquid aspernatur eaque maxime placeat distinctio voluptatum excepturi
                     doloribus numquam quidem.
                 </p>
-                <ul class="flex-list">
-                    <li>
+                <ul class="flex-list"  >
+                    <li  data-aos="fade-up" data-aos-duration="1000"   data-aos-delay="50">
                         <a href="#">
                             <h4>Work 1</h4>
-                            <img src="https://via.placeholder.com/150" alt="portfolio_1">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, cum!</p>
+                            <div class="image-box">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, cum!</p>
+                            </div>
                         </a>
                     </li>
-                    <li>
+                    <li  data-aos="fade-up"  data-aos-duration="1000"   data-aos-delay="100">
                         <a href="#">
                             <h4>Work 2</h4>
-                            <img src="https://via.placeholder.com/150" alt="portfolio_2">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, cum!</p>
+                            <div class="image-box">
+                                <div></div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, cum!</p>
+                            </div>
                         </a>
                     </li>
-                    <li>
+                    <li  data-aos="fade-up"  data-aos-duration="1000"   data-aos-delay="150">
                         <a href="#">
                             <h4>Work 3</h4>
-                            <img src="https://via.placeholder.com/150" alt="portfolio_3">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, cum!</p>
+                            <div class="image-box">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, cum!</p>
+                            </div>
                         </a>
                     </li>
                 </ul>
             </div>
         </section>
 
-        <!--this is grid-->
+        <!-- this is grid
         <section id="portfolio">
             <div class="container">
                 <h3>My Work</h3>
@@ -105,10 +110,10 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
 
-        <section id="link">
+        <section id="link" data-aos="fade-up"  data-aos-duration="1000"   data-aos-delay="300">
          <!-- this is the beggining of section 4 -->
                 <div class="container">
                         <h4>Friends</h4>
@@ -121,12 +126,17 @@
                     </div>
         </section>
 
+        <section class="video">
+            <div class="video-wrapper"> 
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/HE9nLWFZ6ac" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
          <!-- this is the beggining of section 5 -->
-        <section id="email">
+        <section id="email" data-aos="fade-up"  data-aos-duration="1000"   data-aos-delay="450">
             <div class="container">
                 <h4>Contact</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, maxime?</p>
-                <a href="mailto:andrea@andrea.com">andrea@andrea.com</a>
+                <a class="btn" href="mailto:andrea@andrea.com">andrea@andrea.com</a>
             </div>
         </section>
 
@@ -138,10 +148,13 @@
             <li><a href="#" target="_blank" rel="noopener noreferrer"></a><i class="fab fa-medium"></i></li>
             <li><a href="#" target="_blank" rel="noopener noreferrer"></a><i class="fab fa-linkedin"></i></li>
         </ul>
-        <p> © Andrea Garrido 2019
-        </p>
+        <p> © Andrea Garrido 2019</p>
     </footer>
-    <a href="#top">Top</a>
+    <div class="go-top"><a href="#top">Top</a></div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 
