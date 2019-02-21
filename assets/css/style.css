@@ -183,6 +183,16 @@ section:nth-last-of-type(even){
     }
 }
 
+/* grid */
+.grid-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+    grid-gap:10px;
+}
+
+.grid-list li{
+    position: relative;
+}
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
